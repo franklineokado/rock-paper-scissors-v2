@@ -27,28 +27,28 @@ function getResult(myMove) {
 
   let result;
 
-  if (computerMove === 'Rock') {
-    if (myMove === 'Rock') {
+  if (computerMove === 'rock') {
+    if (myMove === 'rock') {
       result = 'Its a Tie'
-    } else if (myMove === 'Paper') {
+    } else if (myMove === 'paper') {
       result = 'You Win'
-    } else if (myMove === 'Scissors') {
+    } else if (myMove === 'scissors') {
       result = 'You Lose'
     }
-  } else if (computerMove === 'Paper') {
-    if (myMove === 'Rock') {
+  } else if (computerMove === 'paper') {
+    if (myMove === 'rock') {
       result = 'You Lose'
-    } else if (myMove === 'Paper') {
+    } else if (myMove === 'paper') {
       result = 'Its a Tie'
-    } else if (myMove === 'Scissors') {
+    } else if (myMove === 'scissors') {
       result = 'You Win'
     }
-  } else if (computerMove === 'Scissors') {
-    if (myMove === 'Rock') {
+  } else if (computerMove === 'scissors') {
+    if (myMove === 'rock') {
       result = 'You Win'
-    } else if (myMove === 'Paper') {
+    } else if (myMove === 'paper') {
       result = 'You Lose'
-    } else if (myMove === 'Scissors') {
+    } else if (myMove === 'scissors') {
       result = 'Its a Tie'
     }
   }
@@ -75,11 +75,11 @@ function getComputerMove() {
   const randomNumber = Math.random();
 
   if (randomNumber > 0 && randomNumber < 1/3) {
-    computerMove = 'Rock';
+    computerMove = 'rock';
   } else if (randomNumber > 1/3 && randomNumber < 2/3) {
-    computerMove = 'Paper';
+    computerMove = 'paper';
   } else if (randomNumber > 2/3 && randomNumber < 1) {
-    computerMove = 'Scissors';
+    computerMove = 'scissors';
   };
   return computerMove
 };
