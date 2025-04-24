@@ -63,7 +63,7 @@ function getResult(myMove) {
 
   localStorage.setItem('trackResults', JSON.stringify(trackResults));
 
-  document.querySelector('.js-results-statement').innerHTML = `You picked <span><img src="images/${myMove}-emoji.png" class="images"></span> Computer picked <span><img src="images/${computerMove}-emoji.png" class="images"></span> <span class="results-text"><br><br>${result}.</span>` 
+  document.querySelector('.js-results-statement').innerHTML = `You picked <span><img src="${myMove}-emoji.png" class="images"></span> Computer picked <span><img src="${computerMove}-emoji.png" class="images"></span> <span class="results-text"><br><br>${result}.</span>` 
 
   document.querySelector('.js-score-statement').innerHTML = `Wins: ${trackResults.Wins}, Loses: ${trackResults.Loses}, Ties: ${trackResults.Ties}`;
 };
